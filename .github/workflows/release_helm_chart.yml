@@ -33,6 +33,6 @@ jobs:
           access-key-secret: ${{ secrets.CHART_OSS_ACCESS_KEY_SECRET }}
       - run: |
           ossutil cp ~/helm/repo/dongtai-iast-${{ env.VERSION  }}.tgz  oss://dongtai-helm-charts/iast/
-          ossutil cp ~/helm/repo/index.yaml  oss://dongtai-helm-charts/iast/
+          ossutil cp -rf ~/helm/repo/index.yaml  oss://dongtai-helm-charts/iast/
 
           
