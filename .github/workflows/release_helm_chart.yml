@@ -34,5 +34,4 @@ jobs:
       - run: |
           ossutil cp ~/helm/repo/dongtai-iast-${{ env.VERSION  }}.tgz  oss://dongtai-helm-charts/iast/
           ossutil cp -rf ~/helm/repo/index.yaml  oss://dongtai-helm-charts/iast/
-
-          
+          cat ~/helm/repo/index.yaml
