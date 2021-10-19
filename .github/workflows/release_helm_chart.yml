@@ -1,7 +1,7 @@
 name: Release helm chart
 on:
   push:
-    tag:
+    tags:
       - "v*"
 jobs:
   build:
